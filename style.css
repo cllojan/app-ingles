@@ -11,11 +11,7 @@ body{
   height: 100vh;
   background-color: #3498DB;
 }
-img{
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
+
 #app{
   
   width: 100%;
@@ -61,16 +57,57 @@ h3{
 .options{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  
 }
 .option{
+  margin:5px;
+  padding:10px;
   text-decoration: none;
   color:#f4f4f4;
   font-size: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border:3px solid transparent;
+}
+.option img{
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 .option span{
   font-size: 18px;
+}
+.option:hover{
+  border:3px solid #34495E;
+  border-radius: 5px;
+}
+
+.vocabulario{
+  text-align: center;
+  color:#f4f4f4;
+}
+
+.vocabulario_options{
+  margin-left: 20px;
+  font-size:20px;
+  text-align: left;
+}
+
+.v__options img{
+  width: 120px;
+  height: 150px ;
+
+}
+.v__option{
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+.colors,.frutas,.shapes,.animals{
+  cursor:pointer;
 }
