@@ -4,12 +4,14 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  overflow-x: none;
 }
 body{
   font-family: "Poppins",sans-serif;
   width: 100vw;
   height: 100vh;
   background-color: #3498DB;
+  
 }
 
 #app{
@@ -21,6 +23,11 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 h3{
   font-size: 1.5em;
@@ -36,18 +43,24 @@ h3{
   color:#34495E;
   font-weight: 600;
 }
+label{
+  font-size:1em;
+  color:#f4f4f4;
+  font-weight: 600;
+}
 #app input:focus{
   outline: none;
   border: 1px solid #34495E;
 }
 #app a{
+  
   text-decoration: none;
   cursor: pointer;
   border: none;
   color:#f4f4f4;
   background-color: #1ABC9C;
-  width:80px;
-  padding: 9px 10px;
+  text-align: center;
+  padding: 10px;
 }
 .options_cont{
   display:flex;
@@ -110,4 +123,83 @@ h3{
 }
 .colors,.frutas,.shapes,.animals{
   cursor:pointer;
+}
+.button_quiz{
+  position: absolute;
+  padding: 10px 20px;
+  top:10px;
+  right:40px;
+  text-decoration: none;
+  background-color:yellowgreen;
+  border-radius: 6px;
+  color:#f4f4f4;
+  font-size:20px;
+  font-weight: 500;
+}
+.quiz{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f4f4;
+  text-align: left;
+}
+.btn{
+  padding: 15px 45px;
+  background-color: #34495E;
+  color:#f4f4f4;
+  border:none;
+  border-radius: 5px;
+  font-family: "Montserrat",sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quiz-box .question-number{
+  font-size: 18px;
+  color:#009688;
+  font-weight: 600;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+.quiz-box .question_text{
+  text-align: left;
+  font-size:22px;
+  color:#000000;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.quiz-box .option-container .option_q{
+  background-color: #cccccc;
+  padding: 16px;
+  font-size:16px;
+  
+  line-height: 22px;
+  color:#000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor:pointer;
+}
+.hide{
+  display: none;
+}
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#ffffff;
+}
+
+.volver{
+  text-decoration: none;
+  background-color: #1ABC9C;
+  color:#f4f4f4;
+  padding: 10px 20px;
 }

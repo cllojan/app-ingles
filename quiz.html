@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="quiz">
+        <div class="quiz-box custom-box">
+            <div class="question-number">
+                
+            </div>
+            <div class="question_text">
+                
+            </div>
+            <div class="option-container">
+                
+            </div>
+            <div class="next-question-button" onclick="next()">
+                <div class="btn">Next</div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="result-box hide">
+        <h4>Correctas: <span class="correct"></span></h4>
+        <h4>Incorrectas: <span class="incorrect"></span ></h4>
+
+        <a id="btnEnviar" href="vocabulary.html" class="volver">Volver a vocabulario</a>
+    </div>
+    <script  src="questions.js"></script>
+      
+    <script  src="main.js"></script>
+</body>
+</html>

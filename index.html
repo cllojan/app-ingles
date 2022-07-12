@@ -9,13 +9,36 @@
   </head>
   <body>
     <div id="app">
-      <h3>Escribe tu nombre</h3>
+      
       <form action="">
-        <input type="text">
+        <label for="">Escribe tu nombre</label>
+        <input class="nombre" type="text">
+        <label for="\">Escribe tu edad</label>
+        <input class="edad" type="text">
         <a href="options.html">Empezar</a>
       </form>
       
     </div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBt7xwZ3PpBPhN_Bw7aXq7rj5uGYzTzJOg",
+        authDomain: "aprender-ingles-9124a.firebaseapp.com",
+        databaseURL: "https://aprender-ingles-9124a-default-rtdb.firebaseio.com",
+        projectId: "aprender-ingles-9124a",
+        storageBucket: "aprender-ingles-9124a.appspot.com",
+        messagingSenderId: "987887816274",
+        appId: "1:987887816274:web:8cdb32e9afd698fb29998b"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
