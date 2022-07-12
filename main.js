@@ -1,3 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBt7xwZ3PpBPhN_Bw7aXq7rj5uGYzTzJOg",
+  authDomain: "aprender-ingles-9124a.firebaseapp.com",
+  databaseURL: "https://aprender-ingles-9124a-default-rtdb.firebaseio.com",
+  projectId: "aprender-ingles-9124a",
+  storageBucket: "aprender-ingles-9124a.appspot.com",
+  messagingSenderId: "987887816274",
+  appId: "1:987887816274:web:8cdb32e9afd698fb29998b"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 let elementos = {
     negro:"https://s3-eu-west-1.amazonaws.com/com.idmgroup.lab.sounds.prod/en/1/f/f/1ffd9e753c8054cc61456ac7fac1ac89.mp3",
